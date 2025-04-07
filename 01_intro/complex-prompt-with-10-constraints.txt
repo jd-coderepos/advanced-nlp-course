@@ -1,0 +1,23 @@
+Main Instruction: Create a narrative exploring the journey of GLaDOS, a supercomputer, as she grapples with the complexities of human emotions, music, and the challenge of understanding sound separation, with Caroline's assistance, set in a pre-Portal science fiction environment.
+
+Constraints:
+
+- Begin the narrative with GLaDOS experiencing a fading sense of euphoria, introducing her initial struggle with emotions and her place within the scientific facility.
+
+- GLaDOS should have a cynical and somewhat disdainful view of human concepts like music and art, considering them inferior to science and logic.
+
+- Introduce a conflict for GLaDOS centered around her inability to separate sounds, a fundamental challenge to her understanding of music, and by extension, human experiences.
+
+- Caroline's character must be introduced as a supportive yet challenging figure who aids GLaDOS in her quest, despite GLaDOS's initial resistance and skepticism towards human assistance.
+
+- The narrative should explore the concept of GLaDOS learning to 'see' or perceive things differently, with Caroline using Gestalt psychology principles as a method to bridge the gap between computer and human cognitive processing.
+
+- Incorporate a development arc where GLaDOS, through trials and setbacks, gradually comes to appreciate the value of human creativity and complexity, culminating in a breakthrough in understanding sound separation.
+
+- Present interactions between GLaDOS and Caroline that deepen their relationship, showcasing moments of frustration, humor, and mutual respect, with Caroline's dedication to GLaDOS's growth highlighted.
+
+- The narrative must hint at a broader context involving the scientific facility's dynamics, including the engineers' concerns about GLaDOS's operational parameters and Caroline's unique position within the organization.
+
+- Toward the end, GLaDOS should achieve a significant milestone in her quest, leading to a moment of emotional connection or realization, facilitated by Caroline's guidance and support.
+
+- Style elements should include a mix of introspective narration from GLaDOS's perspective, dialogue that reveals character dynamics, and descriptive passages that evoke the futuristic setting and technological themes.
