@@ -52,7 +52,7 @@ def apply_rotary_emb(
     device = query.device
     # todo
     #
-    # Please refer to slide 22 in https://phontron.com/class/anlp2024/assets/slides/anlp-05-transformers.pdf
+    # Please refer to ANLP Lecture 2 Slide 49
     # and Section 3 in https://arxiv.org/abs/2104.09864.
 
     # reshape xq and xk to match the complex representation
