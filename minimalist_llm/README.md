@@ -1,7 +1,9 @@
 # Minimalist-Llama
 This is an implementation of a minimalist version of Llama2. This is offered to the students of the LUH [Advanced NLP course](https://sites.google.com/view/jen-web/sose-2025). A walkthrough of the code offers deeper insights into the programmatic implementation of various components of the transformer architecture based on that implemented for LLaMA 2.
 
-There are two folders: 1) assignment -- in this assignment, you will implement some important components of the Llama2 model to better understand its architecture, and 2) solution -- will be released on May 12, 2025. The solution will contain all the code for the unimplemented functions which you can use to compare your solutions with. 
+In this assignment, you will implement some important components of the Llama2 model to better understand its architecture. 
+
+The solution will be released on May 12, 2025. It will contain all the code for the unimplemented functions which you can use to compare your solutions with. 
  
 You will then perform sentence classification on ``sst`` dataset and ``cfimdb`` dataset with this model.
 
