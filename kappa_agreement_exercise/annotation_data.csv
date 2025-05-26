@@ -1,0 +1,11 @@
+Text ID,Text,Annotator A,Annotator B
+1,I loved the new movie!,Positive,Positive
+2,"It was just okay, nothing special.",Neutral,Neutral
+3,Absolutely terrible experience.,Negative,Negative
+4,I’m not sure how I feel about it.,Neutral,Positive
+5,"The plot was great, but the acting meh.",Neutral,Neutral
+6,One of the best films of the year!,Positive,Positive
+7,Boring and predictable.,Negative,Negative
+8,Really impressive visuals!,Positive,Neutral
+9,"It was fine, I guess.",Neutral,Neutral
+10,I’ll never watch that again.,Negative,Negative
