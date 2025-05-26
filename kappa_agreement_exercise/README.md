@@ -1,6 +1,6 @@
 # Kappa Agreement Exercise
 
-This exercise demonstrates how to calculate **Cohen's Kappa** to assess inter-annotator agreement.
+This exercise demonstrates how to calculate **Cohen's Kappa** to assess inter-annotator agreement. Refer Lecture 6, Slide 32.
 
 ## Dataset
 

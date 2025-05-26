@@ -1,6 +1,6 @@
 Text ID,Text,Annotator A,Annotator B
 1,I loved the new movie!,Positive,Positive
-2,"It was just okay, nothing special.",Neutral,Neutral
+2,"It was just okay, nothing special.",Neutral,Negative
 3,Absolutely terrible experience.,Negative,Negative
 4,I’m not sure how I feel about it.,Neutral,Positive
 5,"The plot was great, but the acting meh.",Neutral,Neutral
