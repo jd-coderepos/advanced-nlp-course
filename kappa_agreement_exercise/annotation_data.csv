@@ -3,7 +3,7 @@ Text ID,Text,Annotator A,Annotator B
 2,"It was just okay, nothing special.",Neutral,Negative
 3,Absolutely terrible experience.,Negative,Negative
 4,I’m not sure how I feel about it.,Neutral,Positive
-5,"The plot was great, but the acting meh.",Neutral,Neutral
+5,"The plot was great, but the acting meh.",Neutral,Negative
 6,One of the best films of the year!,Positive,Positive
 7,Boring and predictable.,Negative,Negative
 8,Really impressive visuals!,Positive,Neutral
