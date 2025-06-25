@@ -33,7 +33,7 @@ In this exercise, you will build a simple **Retrieval-Augmented Generation (RAG)
 
 ### ✅ Task 2: Load and Chunk the Dataset
 
-1. Download or create a file `cat-facts.txt` with a list of cat facts (one fact per line).
+1. Use the provided `cat-facts.txt` file (containing one cat fact per line), or feel free to substitute it with your own text file of short factual sentences.
 2. Write Python code to:
    - Load the dataset
    - Treat each line as a "chunk" of knowledge
