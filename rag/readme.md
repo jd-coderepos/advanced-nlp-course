@@ -37,6 +37,14 @@ In this exercise, you will build a simple **Retrieval-Augmented Generation (RAG)
 2. Write Python code to:
    - Load the dataset
    - Treat each line as a "chunk" of knowledge
+   
+```python
+# Load the dataset
+
+dataset = []
+with open('cat-facts.txt', 'r') as file:
+  # complete code line
+```
 
 ---
 
@@ -46,10 +54,22 @@ In this exercise, you will build a simple **Retrieval-Augmented Generation (RAG)
 2. Store the results in a `VECTOR_DB` list as tuples of `(chunk, embedding)`.
 
 ```python
+# Implement the retrieval system
+
+EMBEDDING_MODEL = 'hf.co/CompendiumLabs/bge-base-en-v1.5-gguf'
+LANGUAGE_MODEL = 'hf.co/bartowski/Llama-3.2-1B-Instruct-GGUF'
+
+# Each element in the VECTOR_DB will be a tuple (chunk, embedding)
+# The embedding is a list of floats, for example: [0.1, 0.04, -0.34, 0.21, ...]
 VECTOR_DB = []
+
 def add_chunk_to_database(chunk):
-    embedding = ollama.embed(model=EMBEDDING_MODEL, input=chunk)['embeddings'][0]
-    VECTOR_DB.append((chunk, embedding))
+  embedding = ollama.embed(model=EMBEDDING_MODEL, input=chunk)['embeddings'][0]
+  VECTOR_DB.append((chunk, embedding))
+
+# In this example, we will consider each line in the dataset as a chunk for simplicity.
+for i, chunk in enumerate(dataset):
+  #complete code line
 ```
 
 ---
@@ -58,14 +78,33 @@ def add_chunk_to_database(chunk):
 
 1. Write a function `cosine_similarity(a, b)` that computes the similarity between two vectors.
 
+```
+def cosine_similarity(a, b):
+  #complete the function code lines
+```
+
 ---
 
-### ✅ Task 5: Implement Retrieval
+### ✅ Task 5: Retrieval
 
-1. Implement a function `retrieve(query, top_n=3)` that:
+1. You are given a function `retrieve(query, top_n=3)` that:
    - Embeds the query
    - Calculates cosine similarity between query and all chunk embeddings
    - Returns top-k most relevant chunks
+
+```
+def retrieve(query, top_n=3):
+  query_embedding = ollama.embed(model=EMBEDDING_MODEL, input=query)['embeddings'][0]
+  # temporary list to store (chunk, similarity) pairs
+  similarities = []
+  for chunk, embedding in VECTOR_DB:
+    similarity = cosine_similarity(query_embedding, embedding)
+    similarities.append((chunk, similarity))
+  # sort by similarity in descending order, because higher similarity means more relevant chunks
+  similarities.sort(key=lambda x: x[1], reverse=True)
+  # finally, return the top N most relevant chunks
+  return similarities[:top_n]
+```
 
 ---
 
@@ -77,9 +116,43 @@ def add_chunk_to_database(chunk):
    - A user message with the original query
 3. Stream and print the chatbot's response in real time.
 
+```
+# For example, a prompt can be constructed as follows:
+input_query = input('Ask me a question: ')
+retrieved_knowledge = retrieve(input_query)
+
+print('Retrieved knowledge:')
+for chunk, similarity in retrieved_knowledge:
+  print(f' - (similarity: {similarity:.2f}) {chunk}')
+
+instruction_prompt = f'''You are a helpful chatbot.
+Use only the following pieces of context to answer the question. Don't make up any new information:
+{'\n'.join([f' - {chunk}' for chunk, similarity in retrieved_knowledge])}
+'''
+
+```
+
+We then use the `ollama` to generate the response. In this example, we will use `instruction_prompt` as system message:
+
+```
+stream = ollama.chat(
+  model=LANGUAGE_MODEL,
+  messages=[
+    {'role': 'system', 'content': instruction_prompt},
+    {'role': 'user', 'content': input_query},
+  ],
+  stream=True,
+)
+
+# print the response from the chatbot in real-time
+print('Chatbot response:')
+for chunk in stream:
+  print(chunk['message']['content'], end='', flush=True)
+```
+
 ---
 
-### ✅ Task 7: Integrate the Full Pipeline
+### ✅ Task 7: Now put everything together -- Integrate the Full Pipeline
 
 1. Combine retrieval and generation into a single script `demo.py`.
 2. On running, it should:
