@@ -183,6 +183,12 @@ for chunk in stream:
 
 ## 📤 Submission
 
-Submit your completed `demo.py` file and a short reflection answering:
-- What limitations did you observe?
-- What could be improved with a larger dataset or more advanced models?
+Please submit a code repository containing the following:
+- A completed `demo.py` file
+- A short README.md that includes:
+    - A brief introduction to your code (what it does and how to run it)
+    - A short reflection answering the following questions:
+      - What limitations did you observe?
+      - What could be improved with a larger dataset or more advanced models?
+
+Make sure your repository is clearly structured and includes any necessary dependencies or instructions for reproducibility.
