@@ -128,11 +128,10 @@ for chunk, similarity in retrieved_knowledge:
 instruction_prompt = f'''You are a helpful chatbot.
 Use only the following pieces of context to answer the question. Don't make up any new information:
 {'\n'.join([f' - {chunk}' for chunk, similarity in retrieved_knowledge])}
-'''
 
 ```
 
-We then use the `ollama` to generate the response. In this example, we will use `instruction_prompt` as system message:
+Then use `ollama` to generate the response. In this example, we will use `instruction_prompt` as system message:
 
 ```
 stream = ollama.chat(
