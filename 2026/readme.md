@@ -1,7 +1,7 @@
 ### Advanced NLP Summer 2026 Code
 
 <p align="center">
-  <img src="assets/icon.png" alt="course icon" width="600"/>
+  <img src="assets/icon.png" alt="course icon" width="300"/>
 </p>
 
 Code for LUH Advanced NLP, Summer Semester 2026 (SoSe 26)
