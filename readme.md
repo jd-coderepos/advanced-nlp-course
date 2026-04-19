@@ -1,9 +1,7 @@
-### Advanced NLP Summer 2026 Code
+### Advanced NLP Summer Code
 
-Code for LUH Advanced NLP, Summer 2026
+Code for LUH Advanced NLP course. This course is offered during the summer semesters and has so far been offered in 2025 for 3 credits and currently in 2026 for 5 credits.
 
-Instructor: [Jennifer D'Souza](https://sites.google.com/view/jen-web/)
+Course lecturer: [Jennifer D'Souza](https://sites.google.com/view/jen-web/)
 
-Course website: https://sites.google.com/view/jen-web/sose-2026
-
-Code examples associated with a lecture are in the directory prefixed with the lecture's number.
+For code and exercise examples for the current semester SoSe 2026, please refer to the [2026 subdirectory](https://github.com/jd-coderepos/advanced-nlp-course/tree/main/2026) in this github repository.

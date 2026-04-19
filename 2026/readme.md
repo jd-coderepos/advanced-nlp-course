@@ -1,9 +1,14 @@
-### Advanced NLP Summer Code
+### Advanced NLP Summer 2026 Code
 
-Code for LUH Advanced NLP
+Code for LUH Advanced NLP, Summer Semester 2026 (SoSe 26)
 
-The current semester is Summer 2026 (SoSe 26)
+Course Lecturer: [Jennifer D'Souza](https://sites.google.com/view/jen-web/)
 
-Instructor: [Jennifer D'Souza](https://sites.google.com/view/jen-web/)
+Course website: https://sites.google.com/view/jen-web/sose-2026
 
-For code and exercise examples, please refer to the [2026 subdirectory](https://github.com/jd-coderepos/advanced-nlp-course/tree/main/2026) in this github repository.
+Course Exercise Instructors:
+
+- Hamed Babaei Giglou
+- Sameer Sadruddin
+
+Code examples associated with a lecture are in the directory prefixed with the lecture's number.
