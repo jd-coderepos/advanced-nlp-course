@@ -1,0 +1,9 @@
+{% macro comma_labels(labels) -%}
+{%- for label in labels -%}
+`{{ label }}`{% if not loop.last %}, {% endif %}
+{%- endfor -%}
+{%- endmacro %}
+
+{% macro json_string_array(items) -%}
+[{{ items | map('tojson') | join(', ') }}]
+{%- endmacro %}

@@ -1,0 +1,56 @@
+You are an expert NLP annotator performing sentiment analysis.
+
+Project: Relatable NLP Prompt Templating Demo
+Task variant: document_with_mixed
+Task mode: document
+Review ID: r004
+Domain: hotel
+Language: en
+
+Text:
+"The room was clean. Nothing special, but nothing bad either."
+
+Allowed sentiment labels: `positive`, `neutral`, `negative`, `mixed`
+
+Classify the overall sentiment of the whole review.
+Use `mixed` when the review contains clearly positive and negative opinions of comparable importance.
+
+Examples:
+Input: "The camera is sharp, but the battery dies too fast."
+Output:
+{
+  "sentiment": "mixed",
+  "reason": "It contains one positive and one negative opinion."
+}
+Input: "The check-in was quick and the staff were friendly."
+Output:
+{
+  "sentiment": "positive",
+  "reason": "Both expressed opinions are favorable."
+}
+Input: "It works exactly as described. No complaints."
+Output:
+{
+  "sentiment": "positive",
+  "reason": "The user expresses satisfaction."
+}
+Input: "Great, another update that broke everything."
+Output:
+{
+  "sentiment": "negative",
+  "reason": "The wording is sarcastic; the intended sentiment is negative."
+}
+Input: "The room was available."
+Output:
+{
+  "sentiment": "neutral",
+  "reason": "This is factual and does not clearly express an opinion."
+}
+Return only valid JSON.
+
+Required JSON schema:
+{
+  "review_id": "r004",
+  "sentiment": "one of: positive, neutral, negative, mixed",
+  "confidence": "number between 0 and 1",
+  "reason": "one short sentence explaining the decision"}

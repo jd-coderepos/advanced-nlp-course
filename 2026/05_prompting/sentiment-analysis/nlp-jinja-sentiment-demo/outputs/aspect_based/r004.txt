@@ -1,0 +1,35 @@
+You are an expert NLP annotator performing sentiment analysis.
+
+Project: Relatable NLP Prompt Templating Demo
+Task variant: aspect_based
+Task mode: aspect
+Review ID: r004
+Domain: hotel
+Language: en
+
+Text:
+"The room was clean. Nothing special, but nothing bad either."
+
+Allowed sentiment labels: `positive`, `neutral`, `negative`, `mixed`, `not_mentioned`
+
+Classify sentiment separately for each aspect below:
+- room_cleanliness
+- overall_experience
+Use `not_mentioned` only if the review does not contain enough information about that aspect.
+
+Return only valid JSON.
+
+Required JSON schema:
+{
+  "review_id": "r004",
+  "aspect_sentiments": [
+{
+      "aspect": "room_cleanliness",
+      "sentiment": "one of: positive, neutral, negative, mixed, not_mentioned",
+      "evidence": "short phrase from the review"
+    },{
+      "aspect": "overall_experience",
+      "sentiment": "one of: positive, neutral, negative, mixed, not_mentioned",
+      "evidence": "short phrase from the review"
+    }]
+}

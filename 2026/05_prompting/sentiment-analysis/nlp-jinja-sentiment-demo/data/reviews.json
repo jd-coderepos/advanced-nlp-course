@@ -1,0 +1,99 @@
+[
+  {
+    "id": "r001",
+    "domain": "electronics",
+    "text": "The battery life is excellent, but the keyboard feels cheap.",
+    "language": "en",
+    "aspects": [
+      "battery",
+      "keyboard",
+      "overall_product"
+    ],
+    "gold_sentiment": "mixed",
+    "contains_sarcasm": false
+  },
+  {
+    "id": "r002",
+    "domain": "restaurant",
+    "text": "The food was lovely, but the service took forever.",
+    "language": "en",
+    "aspects": [
+      "food",
+      "service"
+    ],
+    "gold_sentiment": "mixed",
+    "contains_sarcasm": false
+  },
+  {
+    "id": "r003",
+    "domain": "delivery",
+    "text": "The package arrived two days early and everything was intact.",
+    "language": "en",
+    "aspects": [
+      "delivery_time",
+      "packaging"
+    ],
+    "gold_sentiment": "positive",
+    "contains_sarcasm": false
+  },
+  {
+    "id": "r004",
+    "domain": "hotel",
+    "text": "The room was clean. Nothing special, but nothing bad either.",
+    "language": "en",
+    "aspects": [
+      "room_cleanliness",
+      "overall_experience"
+    ],
+    "gold_sentiment": "neutral",
+    "contains_sarcasm": false
+  },
+  {
+    "id": "r005",
+    "domain": "airline",
+    "text": "I guess losing my suitcase is their idea of premium service.",
+    "language": "en",
+    "aspects": [
+      "baggage_handling",
+      "service"
+    ],
+    "gold_sentiment": "negative",
+    "contains_sarcasm": true
+  },
+  {
+    "id": "r006",
+    "domain": "mobile_app",
+    "text": "The latest update fixed the crashes, but the new interface is confusing.",
+    "language": "en",
+    "aspects": [
+      "stability",
+      "interface"
+    ],
+    "gold_sentiment": "mixed",
+    "contains_sarcasm": false
+  },
+  {
+    "id": "r007",
+    "domain": "audio",
+    "text": "Noise cancellation is excellent, and the headphones are comfortable for long calls.",
+    "language": "en",
+    "aspects": [
+      "noise_cancellation",
+      "comfort"
+    ],
+    "gold_sentiment": "positive",
+    "contains_sarcasm": false
+  },
+  {
+    "id": "r008",
+    "domain": "banking",
+    "text": "Support answered quickly but did not solve the issue.",
+    "language": "en",
+    "aspects": [
+      "response_time",
+      "problem_resolution"
+    ],
+    "gold_sentiment": "negative",
+    "contains_sarcasm": false
+  }
+]

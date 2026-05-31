@@ -1,0 +1,54 @@
+{
+  "project": {
+    "name": "Relatable NLP Prompt Templating Demo",
+    "description": "A tiny project showing how Jinja helps manage conditional prompt variants for sentiment-analysis tasks.",
+    "default_language": "English"
+  },
+  "tasks": [
+    {
+      "name": "document_three_class",
+      "mode": "document",
+      "labels": [
+        "positive",
+        "neutral",
+        "negative"
+      ],
+      "allow_mixed": false,
+      "include_few_shot": true,
+      "include_reasoning_field": true,
+      "json_only": true,
+      "max_examples": 3
+    },
+    {
+      "name": "document_with_mixed",
+      "mode": "document",
+      "labels": [
+        "positive",
+        "neutral",
+        "negative",
+        "mixed"
+      ],
+      "allow_mixed": true,
+      "include_few_shot": true,
+      "include_reasoning_field": true,
+      "json_only": true,
+      "max_examples": 5
+    },
+    {
+      "name": "aspect_based",
+      "mode": "aspect",
+      "labels": [
+        "positive",
+        "neutral",
+        "negative",
+        "mixed",
+        "not_mentioned"
+      ],
+      "allow_mixed": true,
+      "include_few_shot": false,
+      "include_reasoning_field": false,
+      "json_only": true,
+      "max_examples": 0
+    }
+  ]
+}

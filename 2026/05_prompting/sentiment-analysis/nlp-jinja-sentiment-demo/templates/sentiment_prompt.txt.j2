@@ -1,0 +1,71 @@
+{% import "macros.j2" as macros -%}
+You are an expert NLP annotator performing sentiment analysis.
+
+Project: {{ project.name }}
+Task variant: {{ task.name }}
+Task mode: {{ task.mode }}
+Review ID: {{ review.id }}
+Domain: {{ review.domain }}
+Language: {{ review.language }}
+
+Text:
+"{{ review.text }}"
+
+Allowed sentiment labels: {{ macros.comma_labels(task.labels) }}
+
+{% if task.mode == "document" -%}
+Classify the overall sentiment of the whole review.
+{% if task.allow_mixed -%}
+Use `mixed` when the review contains clearly positive and negative opinions of comparable importance.
+{% else -%}
+Do not use a mixed label. If sentiment is mixed, choose the dominant sentiment and lower the confidence.
+{% endif -%}
+{% elif task.mode == "aspect" -%}
+Classify sentiment separately for each aspect below:
+{% for aspect in review.aspects -%}
+- {{ aspect }}
+{% endfor -%}
+Use `not_mentioned` only if the review does not contain enough information about that aspect.
+{% endif %}
+
+{% if review.contains_sarcasm -%}
+Important: this review may contain sarcasm. Interpret the intended sentiment, not only the literal wording.
+{% endif -%}
+
+{% if task.include_few_shot -%}
+Examples:
+{% for example in examples[:task.max_examples] %}
+Input: "{{ example.text }}"
+Output:
+{
+  "sentiment": "{{ example.label }}",
+  "reason": "{{ example.reason }}"
+}
+{% endfor %}
+{% endif -%}
+
+Return {% if task.json_only %}only valid JSON{% else %}a concise structured answer{% endif %}.
+
+{% if task.mode == "document" -%}
+Required JSON schema:
+{
+  "review_id": "{{ review.id }}",
+  "sentiment": "one of: {{ task.labels | join(', ') }}",
+  "confidence": "number between 0 and 1"{% if task.include_reasoning_field %},
+  "reason": "one short sentence explaining the decision"{% endif %}
+}
+{% elif task.mode == "aspect" -%}
+Required JSON schema:
+{
+  "review_id": "{{ review.id }}",
+  "aspect_sentiments": [
+    {% for aspect in review.aspects -%}
+    {
+      "aspect": "{{ aspect }}",
+      "sentiment": "one of: {{ task.labels | join(', ') }}",
+      "evidence": "short phrase from the review"
+    }{% if not loop.last %},{% endif %}
+    {% endfor -%}
+  ]
+}
+{% endif -%}

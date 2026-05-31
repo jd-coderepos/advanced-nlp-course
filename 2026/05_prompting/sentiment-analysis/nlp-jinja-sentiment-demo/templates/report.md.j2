@@ -1,0 +1,48 @@
+# {{ project.name }}
+
+{{ project.description }}
+
+## Dataset Summary
+
+Total reviews: {{ reviews | length }}
+
+{% set sarcastic = reviews | selectattr("contains_sarcasm") | list -%}
+Reviews with possible sarcasm: {{ sarcastic | length }}
+
+Gold-label distribution:
+
+{% for label, count in gold_distribution.items() -%}
+- {{ label }}: {{ count }}
+{% endfor %}
+
+## Prompt Variants
+
+{% for task in tasks %}
+### {{ loop.index }}. {{ task.name }}
+
+- Mode: `{{ task.mode }}`
+- Labels: {{ task.labels | join(", ") }}
+- Few-shot examples: {% if task.include_few_shot %}yes, up to {{ task.max_examples }}{% else %}no{% endif %}
+- JSON-only response: {% if task.json_only %}yes{% else %}no{% endif %}
+
+{% if task.mode == "aspect" %}
+This variant changes the output schema from one document-level label to a list of aspect-level labels.
+{% elif task.allow_mixed %}
+This variant allows a `mixed` sentiment class, which is useful for reviews with both praise and criticism.
+{% else %}
+This variant forces a single three-class document-level decision.
+{% endif %}
+
+{% endfor %}
+
+## Why Jinja Is Useful Here
+
+The Python code does not need separate long strings for every NLP prompt variant.  
+The templates handle:
+
+- conditional task modes,
+- optional few-shot examples,
+- different label spaces,
+- sarcasm warnings,
+- document-level versus aspect-level JSON schemas,
+- batch versus single-review prompts.

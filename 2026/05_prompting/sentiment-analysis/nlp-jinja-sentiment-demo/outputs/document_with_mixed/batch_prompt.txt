@@ -1,0 +1,37 @@
+You are an expert NLP annotator. Annotate a batch of customer reviews.
+
+Task variant: document_with_mixed
+Mode: document
+Allowed labels: `positive`, `neutral`, `negative`, `mixed`
+
+For each review, return one overall sentiment label.
+Use `mixed` when positive and negative opinions are both important.
+
+Reviews:
+1. ID: r001
+   Domain: electronics
+   Text: "The battery life is excellent, but the keyboard feels cheap."
+2. ID: r002
+   Domain: restaurant
+   Text: "The food was lovely, but the service took forever."
+3. ID: r003
+   Domain: delivery
+   Text: "The package arrived two days early and everything was intact."
+4. ID: r004
+   Domain: hotel
+   Text: "The room was clean. Nothing special, but nothing bad either."
+5. ID: r005
+   Domain: airline
+   Text: "I guess losing my suitcase is their idea of premium service."
+Note: possible sarcasm.
+6. ID: r006
+   Domain: mobile_app
+   Text: "The latest update fixed the crashes, but the new interface is confusing."
+7. ID: r007
+   Domain: audio
+   Text: "Noise cancellation is excellent, and the headphones are comfortable for long calls."
+8. ID: r008
+   Domain: banking
+   Text: "Support answered quickly but did not solve the issue."
+
+Return only valid JSON with one item per review.

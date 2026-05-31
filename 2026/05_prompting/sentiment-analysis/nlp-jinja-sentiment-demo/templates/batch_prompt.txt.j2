@@ -1,0 +1,30 @@
+{% import "macros.j2" as macros -%}
+You are an expert NLP annotator. Annotate a batch of customer reviews.
+
+Task variant: {{ task.name }}
+Mode: {{ task.mode }}
+Allowed labels: {{ macros.comma_labels(task.labels) }}
+
+{% if task.mode == "document" -%}
+For each review, return one overall sentiment label.
+{% if task.allow_mixed -%}
+Use `mixed` when positive and negative opinions are both important.
+{% endif -%}
+{% elif task.mode == "aspect" -%}
+For each review, return sentiment for each listed aspect.
+{% endif %}
+
+Reviews:
+{% for review in reviews %}
+{{ loop.index }}. ID: {{ review.id }}
+   Domain: {{ review.domain }}
+   Text: "{{ review.text }}"
+   {% if task.mode == "aspect" -%}
+   Aspects: {{ review.aspects | join(", ") }}
+   {% endif -%}
+   {% if review.contains_sarcasm -%}
+   Note: possible sarcasm.
+   {% endif %}
+{% endfor %}
+
+Return only valid JSON with one item per review.

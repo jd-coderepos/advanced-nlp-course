@@ -1,0 +1,43 @@
+{
+  "project": {
+    "name": "Scientific Workflow Prompt Pack",
+    "owner": "Demo Research Group",
+    "audience": "research assistants",
+    "default_tone": "concise and precise"
+  },
+  "tasks": [
+    {
+      "title": "Extract ALD process parameters",
+      "domain": "materials science",
+      "priority": "high",
+      "goal": "Extract process temperature, precursor names, pulse time, purge time, and substrate from a methods section.",
+      "input_type": "scientific text",
+      "output_format": "json",
+      "requires_citations": true,
+      "schema_fields": ["material", "precursor", "temperature_c", "pulse_time_s", "purge_time_s", "substrate"],
+      "context_files": ["paper_methods.txt", "schema_v1.json"]
+    },
+    {
+      "title": "Summarize survey table findings",
+      "domain": "psychology",
+      "priority": "medium",
+      "goal": "Summarize which constructs and instruments are reported in a survey table.",
+      "input_type": "table",
+      "output_format": "markdown",
+      "requires_citations": false,
+      "schema_fields": ["construct", "instrument", "population", "sample_size"],
+      "context_files": ["survey_table.csv"]
+    },
+    {
+      "title": "Check ontology alignment candidates",
+      "domain": "knowledge engineering",
+      "priority": "low",
+      "goal": "Review candidate mappings between two ontologies and flag uncertain matches.",
+      "input_type": "mapping list",
+      "output_format": "csv",
+      "requires_citations": false,
+      "schema_fields": ["source_class", "target_class", "relation", "confidence", "comment"],
+      "context_files": []
+    }
+  ]
+}

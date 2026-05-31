@@ -1,0 +1,47 @@
+# {{ project.name }}
+
+Prepared for: **{{ project.audience }}**  
+Default style: **{{ project.default_tone }}**
+
+{% set high_priority_tasks = tasks | selectattr("priority", "equalto", "high") | list -%}
+{% if high_priority_tasks %}
+> {{ high_priority_tasks | length }} high-priority task{{ "s" if high_priority_tasks | length > 1 else "" }} should be reviewed first.
+{% else %}
+> No high-priority tasks in this batch.
+{% endif %}
+
+## Task Overview
+
+| # | Task | Domain | Priority | Output |
+|---|------|--------|----------|--------|
+{% for task in tasks -%}
+| {{ loop.index }} | {{ task.title }} | {{ task.domain }} | {{ task.priority | upper }} | {{ task.output_format }} |
+{% endfor %}
+
+## Details
+
+{% for task in tasks %}
+### {{ loop.index }}. {{ task.title }}
+
+**Goal:** {{ task.goal }}
+
+**Recommended prompt file:** `outputs/prompt_{{ task.title | slugify }}.txt`
+
+{% if task.requires_citations -%}
+**Evidence requirement:** Ask the model to preserve source snippets or citation anchors.
+{% else -%}
+**Evidence requirement:** No citation anchors required for this demo task.
+{% endif %}
+
+{% if task.context_files -%}
+**Context files:**
+{% for file in task.context_files %}
+- `{{ file }}`
+{% endfor %}
+{% else -%}
+**Context files:** None provided. The prompt should ask the model to work only with the supplied mapping rows.
+{% endif %}
+
+**Expected fields:** {{ task.schema_fields | join(", ") }}
+
+{% endfor %}

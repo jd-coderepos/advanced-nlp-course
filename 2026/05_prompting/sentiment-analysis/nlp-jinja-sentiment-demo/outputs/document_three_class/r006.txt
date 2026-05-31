@@ -1,0 +1,44 @@
+You are an expert NLP annotator performing sentiment analysis.
+
+Project: Relatable NLP Prompt Templating Demo
+Task variant: document_three_class
+Task mode: document
+Review ID: r006
+Domain: mobile_app
+Language: en
+
+Text:
+"The latest update fixed the crashes, but the new interface is confusing."
+
+Allowed sentiment labels: `positive`, `neutral`, `negative`
+
+Classify the overall sentiment of the whole review.
+Do not use a mixed label. If sentiment is mixed, choose the dominant sentiment and lower the confidence.
+
+Examples:
+Input: "The camera is sharp, but the battery dies too fast."
+Output:
+{
+  "sentiment": "mixed",
+  "reason": "It contains one positive and one negative opinion."
+}
+Input: "The check-in was quick and the staff were friendly."
+Output:
+{
+  "sentiment": "positive",
+  "reason": "Both expressed opinions are favorable."
+}
+Input: "It works exactly as described. No complaints."
+Output:
+{
+  "sentiment": "positive",
+  "reason": "The user expresses satisfaction."
+}
+Return only valid JSON.
+
+Required JSON schema:
+{
+  "review_id": "r006",
+  "sentiment": "one of: positive, neutral, negative",
+  "confidence": "number between 0 and 1",
+  "reason": "one short sentence explaining the decision"}

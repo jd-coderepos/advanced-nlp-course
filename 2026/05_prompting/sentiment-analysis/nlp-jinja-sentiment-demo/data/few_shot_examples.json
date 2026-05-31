@@ -1,0 +1,27 @@
+[
+  {
+    "text": "The camera is sharp, but the battery dies too fast.",
+    "label": "mixed",
+    "reason": "It contains one positive and one negative opinion."
+  },
+  {
+    "text": "The check-in was quick and the staff were friendly.",
+    "label": "positive",
+    "reason": "Both expressed opinions are favorable."
+  },
+  {
+    "text": "It works exactly as described. No complaints.",
+    "label": "positive",
+    "reason": "The user expresses satisfaction."
+  },
+  {
+    "text": "Great, another update that broke everything.",
+    "label": "negative",
+    "reason": "The wording is sarcastic; the intended sentiment is negative."
+  },
+  {
+    "text": "The room was available.",
+    "label": "neutral",
+    "reason": "This is factual and does not clearly express an opinion."
+  }
+]
