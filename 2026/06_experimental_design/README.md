@@ -2,12 +2,12 @@
 
 This repository contains exercises for analyzing experimental reliability in NLP.
 
-1. `statistical-significance-exercise/`
+1. `statistical-significance/`
    Statistical significance tests for comparing NLP systems on existing evaluation datasets.
 
-2. `power-analysis-exercise/`
+2. `power-law-analysis/`
    Power analysis for estimating whether a dataset is large enough to detect expected differences between methods.
 
-3. `kappa-agreement-exercise/`
+3. `kappa-agreement/`
    Cohen's kappa for measuring inter-annotator agreement beyond chance.
 
