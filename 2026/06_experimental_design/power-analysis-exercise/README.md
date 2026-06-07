@@ -1,20 +1,26 @@
-# NLP Power Analysis — Teaching Exercises
+# Power Analysis Exercise
 
-This is a cleaned classroom exercise package inspired by Card et al. (2020), *With Little Power Comes Great Responsibility*.
-
-The purpose is not to reproduce every analysis or figure from the paper. Instead, the package gives students practical notebooks for the slide question:
+This exercise accompanies **Lecture 6: Experimental Design**, **slide 32**, in particular, on the question:
 
 > How can I estimate whether my test/dev dataset is large enough?
 
-Students will learn to:
+The exercise introduces **power analysis** as a way to reason about the reliability of model comparisons. In NLP, we often compare two systems and ask whether one method is better than another. However, a small observed score difference may be difficult to interpret if the evaluation set is small or noisy.
 
-1. start with an expected effect size, such as a 1–2 percentage-point improvement;
-2. choose a significance threshold, usually `alpha = 0.05`;
-3. choose desired power, often `0.80`;
-4. simulate evaluation data under explicit assumptions;
-5. estimate either:
-   - how many instances are needed to detect the effect, or
-   - what minimum detectable effect is realistic for a fixed dataset size.
+Power analysis helps make this question more precise by connecting the following concepts:
+
+* **Effect size**: the expected difference between two methods, for example a 1–2 percentage-point accuracy improvement.
+* **Sample size**: the number of test instances, dev instances, human ratings, or annotated examples used in the evaluation.
+* **Significance threshold**: the criterion for statistical significance, commonly `alpha = 0.05`.
+* **Statistical power**: the probability that an experiment will detect a real difference between methods, often targeted at `0.80`.
+* **Variance / agreement assumptions**: assumptions about how noisy the metric is, or how similarly two systems behave on the same examples.
+* **Minimum detectable effect**: the smallest performance difference that can be detected reliably for a fixed dataset size.
+
+The notebooks use simulation-based power analysis. Students specify assumptions about the expected model scores, dataset size, significance threshold, and target power. The simulations then estimate either:
+
+1. how many evaluation instances are needed to detect a given expected difference, or
+2. what size of performance difference can realistically be detected with an already fixed dataset.
+
+The goal is to offer a practical understanding of how dataset size, effect size, and statistical testing interact in experimental NLP.
 
 ## Structure
 
