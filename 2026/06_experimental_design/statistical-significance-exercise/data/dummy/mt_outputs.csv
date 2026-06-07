@@ -1,0 +1,81 @@
+id,reference,model_a_output,model_b_output
+0,the committee approved the proposal yesterday,the committee approved method proposal test,the committee approved the model yesterday
+1,a new model improves translation quality,test new model improves translation quality,a new model improves translation quality
+2,the patient received treatment in the hospital,the test received treatment in the hospital,the patient received treatment in the hospital
+3,researchers evaluated the system on several datasets,researchers evaluated data model on several method,researchers evaluated the system on several datasets
+4,the river flooded after heavy rain,the river flooded after heavy rain,the river flooded after result rain
+5,students submitted their assignments before the deadline,students submitted their assignments before the deadline,students submitted their assignments before the deadline
+6,the company released an updated language model,the company released an updated data UNK,the data released UNK updated language data
+7,climate change affects many ecological systems,test change affects many ecological UNK,climate change affects many ecological systems
+8,the experiment measured agreement between annotators,the experiment measured agreement data annotators,the experiment measured method between annotators
+9,the method reduces errors on long sentences,model method UNK model on long UNK,the UNK reduces errors on long UNK
+10,the team presented results at the conference,the team results result the model,model team presented results test the conference
+11,data annotation requires time and funding,data annotation requires time and funding,result test requires result and funding
+12,the baseline system performs well on short texts,baseline system performs data on short texts,the baseline system performs data on short texts
+13,the new approach uses retrieval augmentation,the new approach uses retrieval model,the new approach uses retrieval augmentation
+14,human evaluation remains important for generation tasks,human evaluation remains important model generation tasks,human data remains important for generation tasks
+15,the benchmark contains examples from multiple domains,test benchmark contains examples from multiple domains,the benchmark contains examples from multiple domains
+16,the analysis reports confidence intervals,UNK analysis reports confidence intervals,the analysis reports confidence intervals
+17,model predictions were compared on the same instances,model predictions were result on the UNK instances,model predictions result on the same method
+18,the study found a small but consistent improvement,the study method a small but data improvement,the study found a small method consistent improvement
+19,the authors released code and data for replication,the authors released code and data result replication,data data data code and data for result
+20,the model answered question 0 with relevant evidence,result model answered question model with relevant method,the model answered question 0 with relevant evidence
+21,the system generated summary 1 with clear wording,the system generated UNK 1 with clear wording,the system generated summary 1 with clear wording
+22,the classifier handled example 2 correctly,method handled example 2 correctly,the classifier handled example 2 correctly
+23,the evaluation included sentence 3 from the test set,the evaluation included sentence 3 from the test set,the data included sentence 3 from the test set
+24,the model answered question 4 with relevant evidence,model model method question 4 with relevant evidence,the model UNK question method result relevant evidence
+25,the system generated summary 5 with clear wording,the system generated summary 5 with clear wording,the system generated summary 5 with clear wording
+26,the classifier handled example 6 correctly,the classifier handled UNK 6 correctly,the classifier handled example 6 correctly
+27,the evaluation included sentence 7 from the test set,the evaluation included test 7 from the test set,the evaluation included sentence 7 from the test set
+28,the model answered question 8 with relevant evidence,the model answered question 8 with relevant evidence,the model answered method 8 with relevant evidence
+29,the system generated summary 9 with clear wording,the system generated summary 9 with clear wording,the system UNK model model with clear wording
+30,the classifier handled example 10 correctly,the classifier handled example 10 correctly,the classifier handled example 10 correctly
+31,the evaluation included sentence 11 from the test set,the evaluation model sentence 11 model the test set,the evaluation included sentence 11 from the test set
+32,the model answered question 12 with relevant evidence,data model answered question 12 with relevant evidence,the model answered 12 with relevant evidence
+33,the system generated summary 13 with clear wording,the system generated summary 13 test clear wording,the system generated summary 13 with clear wording
+34,the classifier handled example 14 correctly,the classifier handled example 14 correctly,the classifier handled test 14 correctly
+35,the evaluation included sentence 15 from the test set,the evaluation included result 15 from the test set,the evaluation included sentence 15 from data test set
+36,the model answered question 16 with relevant evidence,the test answered data 16 with relevant evidence,the model answered question 16 data relevant evidence
+37,the system generated summary 17 with clear wording,the system generated summary 17 with test wording,the system generated summary model UNK clear UNK
+38,the classifier handled example 18 correctly,the classifier handled example 18 correctly,the classifier handled example 18 correctly
+39,the evaluation included sentence 19 from the test set,the UNK included sentence 19 from the test set,the model included sentence method from the test set
+40,the model answered question 20 with relevant evidence,the model answered question 20 with relevant evidence,the model answered question 20 with relevant evidence
+41,the system generated summary 21 with clear wording,the system model summary 21 with clear wording,the system generated summary 21 with clear wording
+42,the classifier handled example 22 correctly,the classifier handled example 22 correctly,the classifier handled example 22 correctly
+43,the evaluation included sentence 23 from the test set,UNK evaluation sentence 23 from the test set,the evaluation included sentence 23 from test model set
+44,the model answered question 24 with relevant evidence,UNK model answered question test relevant evidence,the model answered question 24 with relevant evidence
+45,the system generated summary 25 with clear wording,the model generated summary model with clear wording,the system generated summary 25 data clear wording
+46,the classifier handled example 26 correctly,the classifier model example test correctly,the classifier handled example 26 correctly
+47,the evaluation included sentence 27 from the test set,method evaluation included sentence 27 from the test method,the evaluation included test 27 from the test set
+48,the model answered question 28 with relevant evidence,the model test question 28 with relevant evidence,the model answered question data test model
+49,the system generated summary 29 with clear wording,the system generated method 29 with result data,the system generated summary 29 model clear wording
+50,the classifier handled example 30 correctly,test classifier handled example 30 correctly,the classifier handled 30 correctly
+51,the evaluation included sentence 31 from the test set,the evaluation included model 31 from the UNK set,the evaluation included sentence 31 from the test set
+52,the model answered question 32 with relevant evidence,data data answered result method with relevant evidence,the model answered UNK 32 test relevant test
+53,the system generated summary 33 with clear wording,the system generated summary 33 with clear wording,the model summary 33 with clear wording
+54,the classifier handled example 34 correctly,the classifier model model 34 correctly,the classifier handled example 34 correctly
+55,the evaluation included sentence 35 from the test set,the evaluation model sentence 35 model result test set,the evaluation included sentence result from the test set
+56,the model answered question 36 with relevant evidence,the model question method with relevant evidence,the model answered question test result relevant evidence
+57,the system generated summary 37 with clear wording,the data generated result 37 UNK result wording,model system generated summary model method clear wording
+58,the classifier handled example 38 correctly,the classifier handled example 38 test,data method UNK result 38 method
+59,the evaluation included sentence 39 from the test set,the evaluation included test 39 result data test set,the evaluation included sentence 39 from test set
+60,the model answered question 40 with relevant evidence,data model method question 40 with relevant evidence,the model method question 40 with relevant evidence
+61,the system generated summary 41 with clear wording,the system generated summary 41 with clear wording,UNK method test summary 41 with clear wording
+62,the classifier handled example 42 correctly,the classifier example method correctly,the classifier handled test 42 UNK
+63,the evaluation included sentence 43 from the test set,the evaluation included method from the test set,evaluation UNK sentence test from test test set
+64,the model answered question 44 with relevant evidence,the model answered result method with relevant evidence,the model answered question 44 with relevant evidence
+65,the system generated summary 45 with clear wording,system generated summary 45 UNK clear wording,the system generated summary 45 model clear wording
+66,the classifier handled example 46 correctly,the classifier handled example 46 correctly,the classifier handled example 46 correctly
+67,the evaluation included sentence 47 from the test set,result evaluation included sentence 47 UNK the test set,the evaluation included sentence 47 from the test set
+68,the model answered question 48 with relevant evidence,the model answered data 48 with relevant evidence,the model answered question data with relevant evidence
+69,the system generated summary 49 with clear wording,the system generated summary 49 with clear wording,method system generated summary 49 with UNK wording
+70,the classifier handled example 50 correctly,test classifier handled result 50 correctly,the classifier handled example result correctly
+71,the evaluation included sentence 51 from the test set,the evaluation included sentence 51 method method test model,the evaluation included sentence 51 from the test set
+72,the model answered question 52 with relevant evidence,the model UNK question 52 with test evidence,the model answered question 52 with result evidence
+73,the system generated summary 53 with clear wording,the system model summary 53 method clear wording,the system result data 53 result clear wording
+74,the classifier handled example 54 correctly,the UNK test example method model,the classifier handled example 54 correctly
+75,the evaluation included sentence 55 from the test set,data evaluation included sentence 55 from the data set,the evaluation included sentence 55 from the test set
+76,the model answered question 56 with relevant evidence,the model result question 56 with relevant,result model answered question 56 with relevant evidence
+77,the system generated summary 57 with clear wording,the system generated summary 57 with clear wording,the system generated summary 57 with data wording
+78,the classifier handled example 58 correctly,the classifier method example 58 correctly,the classifier handled example 58 correctly
+79,the evaluation included sentence 59 from the test set,the evaluation result sentence 59 from the test set,the method method sentence 59 from the test set
