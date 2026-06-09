@@ -1,0 +1,41 @@
+Text ID,Text,Annotator A,Annotator B
+1,Recent advances in neural retrieval have improved access to large scientific collections.,Background,Background
+2,Many biomedical articles contain specialized terminology that is difficult for non-experts to interpret.,Background,Background
+3,Prior work has shown that transformer models can encode useful contextual information.,Background,Background
+4,Manual curation of scholarly metadata remains expensive and time-consuming.,Background,Background
+5,Ecological synthesis often requires combining evidence from heterogeneous study designs.,Background,Background
+6,Existing topic models provide useful exploratory views but can be hard to evaluate for downstream tasks.,Background,Background
+7,Scientific figures frequently contain information that is not repeated in the surrounding text.,Background,Background
+8,"Despite progress in automatic indexing, assigning precise subject labels remains challenging.",Background,Objective
+9,Previous annotation pipelines relied on keyword matching and simple rule-based filters.,Background,Method
+10,Low agreement among annotators has been reported in several subjective classification tasks.,Background,Result
+11,This study aims to evaluate whether retrieval-augmented generation improves scientific question answering.,Objective,Objective
+12,We investigate how label imbalance affects agreement measures in text classification.,Objective,Objective
+13,The goal of the experiment is to compare sentence-level and document-level annotation strategies.,Objective,Objective
+14,We ask whether short abstracts provide enough context for reliable subject indexing.,Objective,Objective
+15,This work examines the robustness of large language models on noisy scientific inputs.,Objective,Objective
+16,Our objective is to identify which process parameters are most frequently reported in experimental papers.,Objective,Objective
+17,The project seeks to determine whether active learning reduces annotation effort.,Objective,Objective
+18,"To address the limitations of prior benchmarks, we focus on domain-specific scientific corpora.",Objective,Background
+19,We compare three prompting strategies using the same manually annotated development set.,Objective,Method
+20,We test the hypothesis that expert feedback increases extraction quality over multiple iterations.,Objective,Result
+21,Two annotators independently labeled each sentence using a four-category annotation scheme.,Method,Method
+22,We sampled 500 abstracts from open-access publications published between 2020 and 2024.,Method,Method
+23,The model was fine-tuned for three epochs with a learning rate of 2e-5.,Method,Method
+24,Disagreements were resolved after calculating inter-annotator agreement on the initial labels.,Method,Method
+25,We used stratified sampling to maintain a similar number of instances per class.,Method,Method
+26,Each document was converted to plain text and segmented into sentences before annotation.,Method,Method
+27,"Performance was measured using macro-F1, accuracy, and Cohen's kappa.",Method,Method
+28,The annotation guidelines were adapted from earlier work on rhetorical role classification.,Method,Background
+29,We designed the experiment to test whether examples in the prompt improve consistency.,Method,Objective
+30,The final labels were produced by majority vote across three independent runs.,Method,Result
+31,The retrieval-augmented system answered 18 percent more questions correctly than the baseline.,Result,Result
+32,Annotators agreed on 70 percent of the sentences before discussion.,Result,Result
+33,Macro-F1 increased from 0.61 to 0.74 after adding domain-specific examples.,Result,Result
+34,Most disagreements occurred between the Background and Objective categories.,Result,Result
+35,The active learning strategy reduced the number of labeled examples needed for stable performance.,Result,Result
+36,The model performed best on Method sentences and worst on Background sentences.,Result,Result
+37,Error analysis showed that vague sentences were often assigned inconsistent labels.,Result,Result
+38,These findings support earlier observations that subjective tasks produce lower agreement.,Result,Background
+39,The results suggest that clearer annotation guidelines may improve future reliability.,Result,Objective
+40,"After calibration, the two annotators reached substantially higher agreement on the test set.",Result,Method
