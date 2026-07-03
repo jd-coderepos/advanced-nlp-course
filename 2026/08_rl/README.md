@@ -3,3 +3,6 @@
 1. `01_rl/`: a basic policy gradient for cartpole with and without a learned value function
 2. `02_rl/`: an example on how to fine-tune a language model with reinforcement learning for the task of reversing a string.
 
+Additional folder for HW3
+
+1. `hw3_q3_dpo_objective/`

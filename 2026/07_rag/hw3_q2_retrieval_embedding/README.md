@@ -187,24 +187,18 @@ For the failure or uncertain case, explain whether the problem appears to come f
 
 ## Submission
 
-Submit a GitHub repository containing:
+Write your response in your main homework solution document.
 
-- your completed code;
-- the `data/` folder;
-- `requirements.txt`; and
-- a `README.md` with your report.
+Your response should include:
 
-## Completion checklist
+1. the command you used for your main run;
+2. the retrieval metrics before and after training;
+3. a short explanation of the objective function in `src/objective.py`;
+4. one query where retrieval worked well;
+5. one query where retrieval failed or was uncertain; and
+6. one observation from your small experiment.
 
-Before submitting, check that:
-
-- [ ] `python -m unittest tests/test_objective.py` runs successfully.
-- [ ] `python -m src.train --epochs 50 --margin 0.2 --seed 13` runs successfully.
-- [ ] The objective function in `src/objective.py` is explained in your report.
-- [ ] Your report includes Recall@1, Recall@3, and MRR before and after training.
-- [ ] Your report discusses one successful retrieval example.
-- [ ] Your report discusses one failure or uncertain retrieval example.
-- [ ] Your report includes one small experiment with a changed setting.
+If you changed any code, also include a link to your modified repository or clearly describe the changes in your homework document.
 
 ## Sources consulted
 
