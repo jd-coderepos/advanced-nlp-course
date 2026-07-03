@@ -1,0 +1,69 @@
+Luna at the Northside shelter is a six-year-old black cat assigned to Room 4.
+Luna at the Riverside shelter is a two-year-old gray cat assigned to Room 9.
+The Northside Luna eats the standard chicken-based food and has no recorded food allergy.
+The Riverside Luna must eat rabbit-based food because her record lists a chicken allergy.
+Luna at Northside wears a green collar, while Luna at Riverside wears a yellow collar.
+On 2026-02-03, the Northside Luna was moved from Room 4 to Room 7 during window repairs.
+On 2026-02-10, the repairs ended, but the Northside Luna remained in Room 7.
+Oliver weighed 5.8 kilograms at the Cedar Clinic visit on 2025-09-12.
+Oliver weighed 5.4 kilograms at the Cedar Clinic visit on 2026-01-18.
+Oliver weighed 5.6 kilograms at his latest Cedar Clinic visit on 2026-04-22.
+Olive is a different cat from Oliver and weighed 3.9 kilograms on 2026-04-22.
+Oliver belongs to Priya, whereas Olive belongs to Mateo.
+Milo the tabby is allergic to salmon but is not allergic to chicken.
+Miko the tuxedo cat has no recorded fish allergy; his name is sometimes misspelled as Milo in handwritten notes.
+Milo's red food bin contains chicken kibble and no fish ingredients.
+Miko's blue food bin contains salmon kibble.
+The red bin belongs to Milo even though Miko's carrier is also red.
+Juniper was scheduled for the Saturday adoption event on 2026-05-02.
+A veterinary note dated 2026-05-01 says Juniper must rest for seven days and cannot attend adoption events during that period.
+Juniper's sister Jupiter may attend the Saturday adoption event; Jupiter has no activity restriction.
+Juniper and Jupiter are both tortoiseshell cats, but only Jupiter has a white front paw.
+Nimbus arrived from Bremen in a large purple carrier.
+Nimbus's collar color is not recorded anywhere in the benchmark records.
+Cirrus arrived from Hamburg in a small purple carrier.
+Nimbus will return to Bremen, and staff must use the large purple carrier for that trip.
+The small purple carrier is reserved for Cirrus and must not be used for Nimbus.
+Maple is fostered by Amina, and Amina lives in Leipzig.
+Amina also fosters Pepper, but Pepper is currently staying at the Southside clinic.
+The cat currently staying with Amina in Leipzig is Maple, not Pepper.
+Maple's adoption folder is orange; her collar is blue.
+Pepper's adoption folder is blue; her collar is orange.
+Atlas receives breakfast at 07:00 and dinner at 18:00.
+Athena receives breakfast at 08:00 and dinner at 18:30.
+Atlas receives 60 grams at each meal, for a daily total of 120 grams.
+Athena receives 50 grams at breakfast and 70 grams at dinner, for a daily total of 120 grams.
+Although Atlas and Athena receive the same daily amount, their meal times and portions are not identical.
+Poppy's microchip ends in 1842, and Pippa's microchip ends in 1482.
+Poppy is registered to Sam Lee; Pippa is registered to Lee Samson.
+Sam Lee requested a telephone update about Poppy, not Pippa.
+The morning volunteer recorded Theo in Kennel B12.
+A corrected note later that day says Theo is in Kennel D12; the earlier B12 entry was a transcription error.
+Cleo remains in Kennel B12.
+Theo may be handled by senior volunteers, while Cleo may be handled by all trained volunteers.
+Saffron's train departs for Bonn at 14:20 from platform 6.
+Saffron should arrive at the station 30 minutes before the 14:20 departure.
+Saffron travels in the gray carrier labeled SF-6, not the gray carrier labeled FS-9.
+Felix travels to Berlin at 14:20 from platform 9 in the gray carrier labeled FS-9.
+Rowan was adopted by Kim on 2026-03-11.
+Kim returned Rowan to the shelter on 2026-03-20 because a housemate was allergic.
+Rowan was adopted by Noor on 2026-04-02 and has not been returned since.
+As of 2026-04-03, Rowan's current adopter is Noor, not Kim.
+Echo responds to the spoken cue "dinner," while Ecco responds to the sound of a bell.
+Echo is deaf in the left ear but can hear the cue with the right ear.
+Ecco has normal hearing and should not be described as deaf.
+Birch is older than Cedar, and Cedar is older than Ash.
+Ash is the youngest of Birch, Cedar, and Ash.
+Birch is twelve years old, which is three years older than Cedar.
+Cedar is twice Ash's age.
+Sol is allowed in the quiet garden on weekdays except Wednesday.
+On Wednesdays, the quiet garden is closed for maintenance and Sol uses the indoor playroom.
+Sol is not allowed in the busy courtyard on any day.
+Nova may use the busy courtyard, but only before noon.
+A 2025 note called Comet a long-haired cat.
+A correction dated 2026-01-09 explains that Comet is short-haired and that the 2025 note confused Comet with Cosmo.
+Cosmo is long-haired and has a white tail tip.
+Comet is short-haired and has no white tail tip.
+Fern's medication log is stored in the locked cabinet, but the benchmark does not state which medication Fern receives.
+Fern's food log says she ate 40 grams at breakfast and 35 grams at dinner.
+The existence of Fern's medication log is not evidence of a particular diagnosis or medication.
