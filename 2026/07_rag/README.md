@@ -6,5 +6,5 @@
 
 Additional folder for HW3
 
-1. hw3_q1_rag/
-2. hw3_q2_retrieval_embedding/
+1. `hw3_q1_rag/`
+2. `hw3_q2_retrieval_embedding/`
