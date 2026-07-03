@@ -62,19 +62,3 @@ The file `data/toy_preferences.jsonl` contains small preference examples. Exampl
 
 The text fields are included so that the examples look like preference data. The objective only uses the log-probability fields.
 
-## Report questions
-
-After your implementation passes the tests, answer briefly:
-
-1. What does it mean when the DPO logit is positive?
-2. Why does DPO compare the current policy against a reference policy?
-3. What happens to the loss when `beta` is increased?
-4. In the toy data, identify one example with low loss and one with high loss. Explain why.
-
-## Submission
-
-Submit:
-
-- your completed `src/dpo_objective.py`,
-- a screenshot or text output of `pytest -q`,
-- brief answers to the report questions.
