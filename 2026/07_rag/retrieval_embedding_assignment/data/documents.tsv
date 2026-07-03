@@ -1,0 +1,25 @@
+doc_id	text
+D01	The North Library has six quiet study rooms. Students must book a North Library study room online before using it.
+D02	The South Library has group study rooms for walk-in use. South Library rooms cannot be booked online.
+D03	The blue campus shuttle goes to Riverside Station and leaves from platform 3 every weekday at 08:15.
+D04	The green campus shuttle goes to Northside Hall and leaves from platform 5 every weekday at 08:20.
+D05	The Advanced NLP course has a written final exam. The final exam counts for 100 percent of the course grade.
+D06	The Advanced NLP course project presentation is optional practice. It does not replace the written final exam.
+D07	The robotics lab requires safety training before students may use the soldering station.
+D08	The robotics lab visitor tour does not allow visitors to use the soldering station.
+D09	Luna at the Riverside shelter must eat rabbit-based food because her record lists a chicken allergy. Riverside Luna wears a yellow collar.
+D10	Luna at the Northside shelter eats standard chicken-based food and wears a green collar.
+D11	Juniper was scheduled for the 2026-05-02 adoption event, but a 2026-05-01 veterinary note says Juniper must rest for seven days and cannot attend adoption events during that period.
+D12	Jupiter is Juniper's sister. Jupiter may attend the 2026-05-02 adoption event and has no activity restriction.
+D13	The Data Science consultation office is in Building C, room 2.14. Consultations are available on Mondays.
+D14	The Digital Humanities consultation office is in Building C, room 3.05. Consultations are available on Fridays.
+D15	The metal workshop requires an induction certificate before students can operate the laser cutter.
+D16	The chemistry wet lab requires a lab coat and safety glasses before students can handle liquid samples.
+D17	The Python homework clinic meets on Thursday from 16:00 to 18:00 in Room A12.
+D18	The statistics homework clinic meets on Wednesday from 14:00 to 16:00 in Room A12.
+D19	The ORKG seminar meets in Room B20 on Tuesday mornings and focuses on semantic scholarly knowledge graphs.
+D20	The ontology reading group meets in Room B21 on Tuesday afternoons and focuses on ontology engineering papers.
+D21	The bike repair station is beside the east entrance. It has tire pumps and basic tools but no spare inner tubes.
+D22	The laptop loan desk is beside the west entrance. Students may borrow a laptop for up to two days.
+D23	The German conversation course is for A2 speakers and meets on Monday evenings.
+D24	The Estonian language course is for complete beginners and meets on Wednesday evenings.

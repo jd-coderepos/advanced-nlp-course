@@ -1,0 +1,9 @@
+query_id	query	positive_doc_id
+T01	How can a student reserve an individual study room at North Library?	D01
+T02	Which shuttle should I take to Riverside Station, and where does it leave from?	D03
+T03	Is the Advanced NLP grade based on the written final exam?	D05
+T04	Which Luna has the chicken allergy, rabbit food, and yellow collar?	D09
+T05	Can Juniper go to the adoption event on 2026-05-02 after the May 1 vet note?	D11
+T06	Where are Monday Data Science consultations held?	D13
+T07	What time is the Python homework clinic?	D17
+T08	Which course should an A2 German speaker join?	D23

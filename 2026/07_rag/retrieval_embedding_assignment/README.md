@@ -123,6 +123,8 @@ The second test checks that the loss is `1.2`, because the negative document is 
 0.2 + 1.0 - 0.0 = 1.2
 ```
 
+If you see a PyTorch warning about NumPy, run `pip install -r requirements.txt` again inside the active virtual environment. The provided `requirements.txt` includes NumPy.
+
 ## Step 2: Train the model
 
 Run:
