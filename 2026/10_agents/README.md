@@ -12,7 +12,7 @@ pip install google-genai
 
 Then, rename the `.env-example` file to `.env` and fill in your Google Gemini API key. The LLM and VLM agents require this key. The `.env` file should look like this in the end:
 ```text
-GEMINI_API_KEY= aldjfaodsiasdpfjhapgioasdfas
+GEMINI_API_KEY=aldjfaodsiasdpfjhapgioasdfas
 ```
 > The above key is a random string, not a real key!
 
